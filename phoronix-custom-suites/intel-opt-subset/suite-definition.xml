@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>intel-opt-subset</Title>
+    <Version>1.0.0</Version>
+    <TestType>Other</TestType>
+    <Description>Subset of the intel optimization suite</Description>
+    <Maintainer>Shane McKee</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/mnn-2.1.0</Test>
+  </Execute>
+  <Execute>
+    <Test>pts/svt-vp9-1.3.1</Test>
+    <Arguments>-tune 0 -i Bosphorus_1920x1080_120fps_420_8bit_YUV.yuv -w 1920 -h 1080</Arguments>
+    <Description>Tuning: Visual Quality Optimized - Input: Bosphorus 1080p</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/svt-vp9-1.3.1</Test>
+    <Arguments>-tune 0 -i Bosphorus_3840x2160.y4m -w 3840 -h 2160</Arguments>
+    <Description>Tuning: Visual Quality Optimized - Input: Bosphorus 4K</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/svt-vp9-1.3.1</Test>
+    <Arguments>-tune 1 -i Bosphorus_1920x1080_120fps_420_8bit_YUV.yuv -w 1920 -h 1080</Arguments>
+    <Description>Tuning: PSNR/SSIM Optimized - Input: Bosphorus 1080p</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/svt-vp9-1.3.1</Test>
+    <Arguments>-tune 1 -i Bosphorus_3840x2160.y4m -w 3840 -h 2160</Arguments>
+    <Description>Tuning: PSNR/SSIM Optimized - Input: Bosphorus 4K</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/svt-vp9-1.3.1</Test>
+    <Arguments>-tune 2 -i Bosphorus_1920x1080_120fps_420_8bit_YUV.yuv -w 1920 -h 1080</Arguments>
+    <Description>Tuning: VMAF Optimized - Input: Bosphorus 1080p</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/svt-vp9-1.3.1</Test>
+    <Arguments>-tune 2 -i Bosphorus_3840x2160.y4m -w 3840 -h 2160</Arguments>
+    <Description>Tuning: VMAF Optimized - Input: Bosphorus 4K</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/crafty-1.4.5</Test>
+    <Description>Elapsed Time</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/himeno-1.3.0</Test>
+    <Description>Poisson Pressure Solver</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/mt-dgemm-1.2.0</Test>
+    <Description>Sustained Floating-Point Rate</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/aobench-1.0.1</Test>
+    <Description>Size: 2048 x 2048 - Total Time</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/c-ray-1.2.0</Test>
+    <Description>Total Time - 4K, 16 Rays Per Pixel</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/clomp-1.1.2</Test>
+    <Description>Static OMP Speedup</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/john-the-ripper-1.8.0</Test>
+    <Arguments>--format=md5crypt</Arguments>
+    <Description>Test: MD5</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/john-the-ripper-1.8.0</Test>
+    <Arguments>--format=bcrypt</Arguments>
+    <Description>Test: Blowfish</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/john-the-ripper-1.8.0</Test>
+    <Arguments>--format=HMAC-SHA512</Arguments>
+    <Description>Test: HMAC-SHA512</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/john-the-ripper-1.8.0</Test>
+    <Arguments>--format=bcrypt</Arguments>
+    <Description>Test: bcrypt</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/john-the-ripper-1.8.0</Test>
+    <Arguments>--format=wpapsk</Arguments>
+    <Description>Test: WPA PSK</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 1 -b 256 -f 32</Arguments>
+    <Description>Threads: 1 - Buffer Length: 256 - Filter Length: 32</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 1 -b 256 -f 57</Arguments>
+    <Description>Threads: 1 - Buffer Length: 256 - Filter Length: 57</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 1 -b 256 -f 512</Arguments>
+    <Description>Threads: 1 - Buffer Length: 256 - Filter Length: 512</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 2 -b 256 -f 32</Arguments>
+    <Description>Threads: 2 - Buffer Length: 256 - Filter Length: 32</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 2 -b 256 -f 57</Arguments>
+    <Description>Threads: 2 - Buffer Length: 256 - Filter Length: 57</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 2 -b 256 -f 512</Arguments>
+    <Description>Threads: 2 - Buffer Length: 256 - Filter Length: 512</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 4 -b 256 -f 32</Arguments>
+    <Description>Threads: 4 - Buffer Length: 256 - Filter Length: 32</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 4 -b 256 -f 57</Arguments>
+    <Description>Threads: 4 - Buffer Length: 256 - Filter Length: 57</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 4 -b 256 -f 512</Arguments>
+    <Description>Threads: 4 - Buffer Length: 256 - Filter Length: 512</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 8 -b 256 -f 32</Arguments>
+    <Description>Threads: 8 - Buffer Length: 256 - Filter Length: 32</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 8 -b 256 -f 57</Arguments>
+    <Description>Threads: 8 - Buffer Length: 256 - Filter Length: 57</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 8 -b 256 -f 512</Arguments>
+    <Description>Threads: 8 - Buffer Length: 256 - Filter Length: 512</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 16 -b 256 -f 32</Arguments>
+    <Description>Threads: 16 - Buffer Length: 256 - Filter Length: 32</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 16 -b 256 -f 57</Arguments>
+    <Description>Threads: 16 - Buffer Length: 256 - Filter Length: 57</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 16 -b 256 -f 512</Arguments>
+    <Description>Threads: 16 - Buffer Length: 256 - Filter Length: 512</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 20 -b 256 -f 32</Arguments>
+    <Description>Threads: 20 - Buffer Length: 256 - Filter Length: 32</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 20 -b 256 -f 57</Arguments>
+    <Description>Threads: 20 - Buffer Length: 256 - Filter Length: 57</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/liquid-dsp-1.6.0</Test>
+    <Arguments>-n 20 -b 256 -f 512</Arguments>
+    <Description>Threads: 20 - Buffer Length: 256 - Filter Length: 512</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/multichase-1.0.2</Test>
+    <Arguments>multichase</Arguments>
+    <Description>Test: 256MB Array, 256 Byte Stride</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/multichase-1.0.2</Test>
+    <Arguments>multichase -m 4m -s 64</Arguments>
+    <Description>Test: 4MB Array, 64 Byte Stride</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/multichase-1.0.2</Test>
+    <Arguments>multichase -m 1g</Arguments>
+    <Description>Test: 1GB Array, 256 Byte Stride</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/multichase-1.0.2</Test>
+    <Arguments>multichase -m 1g -t 2</Arguments>
+    <Description>Test: 1GB Array, 256 Byte Stride, 2 Threads</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/multichase-1.0.2</Test>
+    <Arguments>multichase -m 1g -t 4</Arguments>
+    <Description>Test: 1GB Array, 256 Byte Stride, 4 Threads</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/toybrot-1.2.0</Test>
+    <Arguments>raymarched/OMP/rmOpenMP</Arguments>
+    <Description>Implementation: OpenMP</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/toybrot-1.2.0</Test>
+    <Arguments>raymarched/STDTASKS/rmSTD_TASKS</Arguments>
+    <Description>Implementation: C++ Tasks</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/toybrot-1.2.0</Test>
+    <Arguments>raymarched/STDTHREADS/rmSTD_THREADS</Arguments>
+    <Description>Implementation: C++ Threads</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/toybrot-1.2.0</Test>
+    <Arguments>raymarched/TBB/rmTBB</Arguments>
+    <Description>Implementation: TBB</Description>
+  </Execute>
+</PhoronixTestSuite>
